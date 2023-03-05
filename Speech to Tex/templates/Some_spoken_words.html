@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text-to-Speech</title>
+</head>
+<body>
+    <h1>Text-to-Speech</h1>
+    <form method="POST">
+        <label for="input">Enter text to be spoken:</label><br>
+        <input type="text" id="input" name="input"><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if user_input %}
+        <h2>You said:</h2>
+        <p>{{ user_input }}</p>
+        <h2>And I heard:</h2>
+        <audio controls>
+            <source src="{{ audio_file }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    {% endif %}
+</body>
+</html>

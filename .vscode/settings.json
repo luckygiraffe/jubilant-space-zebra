@@ -1,0 +1,5 @@
+{
+    "python.analysis.typeCheckingMode": "off",
+    "window.commandCenter": false,
+    "window.autoDetectColorScheme": false
+}

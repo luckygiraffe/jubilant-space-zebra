@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mad GPT</title>
+</head>
+<body>
+    <h1>Mad GPT</h1>
+
+    <form method="POST" action="/process_text">
+        <label for="inputBox">Enter some text:</label>
+        <textarea id="inputBox" name="inputBox" rows="20" cols="60">{{ input_text }}</textarea>
+
+
+        <button type="submit">Process Text</button>
+
+        <label for="outputBox">Result:</label>
+        <textarea id="outputBox" name="outputBox" rows="20" cols="60">{% if output_text is defined %}{{ output_text }}{% endif %}</textarea>
+    </form>
+</body>
+</html>

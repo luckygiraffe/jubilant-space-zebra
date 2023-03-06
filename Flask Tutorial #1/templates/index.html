@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input/Output Example</title>
+</head>
+<body>
+	<h1>Input/Output Example</h1>
+
+	<label for="inputBox">Enter a number:</label>
+	<input type="number" id="inputBox" name="inputBox" />
+
+	<button onclick="calculate()">Calculate</button>
+
+	<label for="outputBox">Result:</label>
+	<input type="number" id="outputBox" name="outputBox" disabled />
+
+	<script>
+		function calculate() {
+			// Get the value from the input box
+			var x = document.getElementById("inputBox").value;
+
+			// Multiply x by 2 and display the result in the output box
+			document.getElementById("outputBox").value = x * 2;
+		}
+	</script>
+</body>
+</html>
